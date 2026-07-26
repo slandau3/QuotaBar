@@ -50,7 +50,7 @@ struct RingView: View {
     var body: some View {
         ZStack {
             Circle()
-                .stroke(Color(white: 0.6, opacity: 0.7), lineWidth: 2)
+                .stroke(.white.opacity(0.85), lineWidth: 2)
             if let percent {
                 Circle()
                     .trim(from: 0, to: min(percent, 100) / 100)
