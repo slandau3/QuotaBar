@@ -55,7 +55,7 @@ struct MenuContentView: View {
                 }
             Spacer()
             Button {
-                Task { await store.refresh() }
+                Task { await store.refresh(force: true) }
             } label: {
                 Image(systemName: "arrow.clockwise")
             }

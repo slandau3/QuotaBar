@@ -80,7 +80,10 @@ func fetchClaude() async -> ServiceUsage {
         let (data, response) = try await makeSession().data(for: request)
         let status = (response as? HTTPURLResponse)?.statusCode ?? 0
         guard status == 200 else {
-            if status == 401 || status == 403 {
+            if status == 429 {
+                usage.error = "Rate limited — backing off"
+                usage.rateLimited = true
+            } else if status == 401 || status == 403 {
                 usage.error = "Re-auth needed — run `claude` once"
             } else {
                 usage.error = "HTTP \(status)"
@@ -196,9 +199,14 @@ func fetchChatGPT() async -> ServiceUsage {
         let (data, response) = try await makeSession().data(for: request)
         let status = (response as? HTTPURLResponse)?.statusCode ?? 0
         guard status == 200 else {
-            usage.error = (status == 401 || status == 403)
-                ? "Re-auth needed — run `codex` once"
-                : "HTTP \(status)"
+            if status == 429 {
+                usage.error = "Rate limited — backing off"
+                usage.rateLimited = true
+            } else {
+                usage.error = (status == 401 || status == 403)
+                    ? "Re-auth needed — run `codex` once"
+                    : "HTTP \(status)"
+            }
             return usage
         }
 
@@ -272,9 +280,14 @@ func fetchKimi() async -> ServiceUsage {
         let (data, response) = try await makeSession().data(for: request)
         let status = (response as? HTTPURLResponse)?.statusCode ?? 0
         guard status == 200 else {
-            usage.error = (status == 401 || status == 403)
-                ? "Key rejected — run `opencode auth login`"
-                : "HTTP \(status)"
+            if status == 429 {
+                usage.error = "Rate limited — backing off"
+                usage.rateLimited = true
+            } else {
+                usage.error = (status == 401 || status == 403)
+                    ? "Key rejected — run `opencode auth login`"
+                    : "HTTP \(status)"
+            }
             return usage
         }
 
