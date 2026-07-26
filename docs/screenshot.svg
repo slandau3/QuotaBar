@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="630" viewBox="0 0 600 630" font-family="-apple-system, 'Helvetica Neue', Helvetica, sans-serif">
+  <rect width="600" height="630" fill="#0b0b0d"/>
+
+  <!-- menu bar -->
+  <rect x="0" y="0" width="600" height="34" fill="#141416"/>
+  <g transform="translate(16 17)">
+    <circle r="7" fill="none" stroke="#5a5a5e" stroke-width="2"/>
+    <circle r="7" fill="none" stroke="#da7756" stroke-width="2" stroke-linecap="round" stroke-dasharray="44 44" transform="rotate(-90)"/>
+  </g>
+  <g transform="translate(40 17)">
+    <circle r="7" fill="none" stroke="#5a5a5e" stroke-width="2"/>
+    <circle r="7" fill="none" stroke="#10a37f" stroke-width="2" stroke-linecap="round" stroke-dasharray="0.4 43.6" transform="rotate(-90)"/>
+  </g>
+  <g transform="translate(64 17)">
+    <circle r="7" fill="none" stroke="#5a5a5e" stroke-width="2"/>
+    <circle r="7" fill="none" stroke="#5966f2" stroke-width="2" stroke-linecap="round" stroke-dasharray="1.3 42.7" transform="rotate(-90)"/>
+  </g>
+
+  <!-- panel -->
+  <rect x="14" y="44" width="572" height="572" rx="14" fill="#1c1c1e" stroke="#333336"/>
+
+  <text x="34" y="86" fill="#f2f2f7" font-size="20" font-weight="700">AI Usage</text>
+  <text x="566" y="84" fill="#8e8e93" font-size="13" text-anchor="end">11:12 AM</text>
+  <line x1="34" y1="104" x2="566" y2="104" stroke="#333336"/>
+
+  <!-- Claude -->
+  <circle cx="38" cy="132" r="5" fill="#da7756"/>
+  <text x="52" y="137" fill="#f2f2f7" font-size="15" font-weight="600">Claude</text>
+  <rect x="524" y="120" width="42" height="20" rx="10" fill="#3a3a3c"/>
+  <text x="545" y="134" fill="#c7c7cc" font-size="11" font-weight="600" text-anchor="middle">Pro</text>
+
+  <text x="38" y="172" fill="#8e8e93" font-size="12">5-hour</text>
+  <rect x="170" y="162" width="270" height="8" rx="4" fill="#3a3a3c"/>
+  <rect x="170" y="162" width="270" height="8" rx="4" fill="#ff453a"/>
+  <text x="566" y="171" fill="#f2f2f7" font-size="13" font-weight="700" text-anchor="end">100%</text>
+  <text x="566" y="192" fill="#636366" font-size="11" text-anchor="end">resets in 17m</text>
+
+  <text x="38" y="216" fill="#8e8e93" font-size="12">Weekly</text>
+  <rect x="170" y="206" width="270" height="8" rx="4" fill="#3a3a3c"/>
+  <rect x="170" y="206" width="167" height="8" rx="4" fill="#ff9f0a"/>
+  <text x="566" y="215" fill="#f2f2f7" font-size="13" font-weight="700" text-anchor="end">62%</text>
+  <text x="566" y="236" fill="#636366" font-size="11" text-anchor="end">resets Thu 3:00 AM</text>
+
+  <!-- ChatGPT -->
+  <circle cx="38" cy="272" r="5" fill="#10a37f"/>
+  <text x="52" y="277" fill="#f2f2f7" font-size="15" font-weight="600">ChatGPT</text>
+  <rect x="524" y="260" width="42" height="20" rx="10" fill="#3a3a3c"/>
+  <text x="545" y="274" fill="#c7c7cc" font-size="11" font-weight="600" text-anchor="middle">Plus</text>
+
+  <text x="38" y="312" fill="#8e8e93" font-size="12">Weekly</text>
+  <rect x="170" y="302" width="270" height="8" rx="4" fill="#3a3a3c"/>
+  <rect x="170" y="302" width="4" height="8" rx="2" fill="#30d158"/>
+  <text x="566" y="311" fill="#f2f2f7" font-size="13" font-weight="700" text-anchor="end">1%</text>
+  <text x="566" y="332" fill="#636366" font-size="11" text-anchor="end">resets Sun 11:04 AM</text>
+
+  <!-- Kimi K3 -->
+  <circle cx="38" cy="368" r="5" fill="#5966f2"/>
+  <text x="52" y="373" fill="#f2f2f7" font-size="15" font-weight="600">Kimi K3</text>
+
+  <text x="38" y="408" fill="#8e8e93" font-size="12">5-hour</text>
+  <rect x="170" y="398" width="270" height="8" rx="4" fill="#3a3a3c"/>
+  <rect x="170" y="398" width="6" height="8" rx="3" fill="#30d158"/>
+  <text x="566" y="407" fill="#f2f2f7" font-size="13" font-weight="700" text-anchor="end">2%</text>
+  <text x="170" y="428" fill="#636366" font-size="11">2/100</text>
+  <text x="566" y="428" fill="#636366" font-size="11" text-anchor="end">resets in 4h 53m</text>
+
+  <text x="38" y="452" fill="#8e8e93" font-size="12">Weekly</text>
+  <rect x="170" y="442" width="270" height="8" rx="4" fill="#3a3a3c"/>
+  <rect x="170" y="442" width="119" height="8" rx="4" fill="#30d158"/>
+  <text x="566" y="451" fill="#f2f2f7" font-size="13" font-weight="700" text-anchor="end">44%</text>
+  <text x="170" y="472" fill="#636366" font-size="11">44/100</text>
+  <text x="566" y="472" fill="#636366" font-size="11" text-anchor="end">resets Wed 5:05 PM</text>
+
+  <line x1="34" y1="500" x2="566" y2="500" stroke="#333336"/>
+
+  <!-- footer -->
+  <rect x="38" y="518" width="15" height="15" rx="4" fill="#0a84ff"/>
+  <path d="M42 525.5 l3 3 l6 -6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="62" y="530" fill="#c7c7cc" font-size="13">Launch at Login</text>
+  <g transform="translate(508 525)" stroke="#c7c7cc" stroke-width="1.8" fill="none" stroke-linecap="round">
+    <path d="M8 1 a8 8 0 1 1 -7.4 5"/>
+    <path d="M8 -3 v4 h4"/>
+  </g>
+  <text x="566" y="530" fill="#c7c7cc" font-size="13" text-anchor="end">Quit</text>
+</svg>
