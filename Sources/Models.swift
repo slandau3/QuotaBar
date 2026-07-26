@@ -33,6 +33,7 @@ struct ServiceUsage: Sendable, Identifiable {
     var planLabel: String?
     var windows: [UsageWindow] = []
     var error: String?
+    var rateLimited = false
 }
 
 enum ProviderError: Error, LocalizedError {

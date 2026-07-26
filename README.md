@@ -9,10 +9,10 @@ A lightweight macOS menu bar app that keeps your AI coding-assistant usage limit
 - **Menu bar rings** — three mini donut rings (orange = Claude, green = ChatGPT, blue = Kimi) that fill with each service's 5-hour-window usage
 - **Detail panel** — click the rings for every usage window per service: percent used, progress bars, reset countdowns, and plan badges
 - **Severity colors** — bars go green → orange → red as you approach a limit
-- **Auto-refresh** every 5 minutes, plus manual refresh
+- **Auto-refresh** with per-service pacing (Claude every 10 min, ChatGPT/Kimi every 5 min), plus manual refresh. If a provider returns `429`, QuotaBar backs off for 15 minutes and keeps showing your last good numbers instead of an error
 - **Launch at Login** toggle built in
 - **Zero configuration** — reuses the logins you already have from Claude Code, Codex CLI, and opencode. No API keys to paste, no accounts to create
-- **Negligible battery impact** — three small HTTPS requests every 5 minutes, no polling loops or websockets
+- **Negligible battery impact** — a few small HTTPS requests per cycle, no polling loops or websockets
 
 ## Requirements
 
