@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#262B36"/>
+      <stop offset="1" stop-color="#12151C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- macOS-style rounded-square base -->
+  <rect width="1024" height="1024" rx="228" fill="url(#bg)"/>
+
+  <!-- faint track rings -->
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="64">
+    <circle cx="512" cy="512" r="310"/>
+    <circle cx="512" cy="512" r="225"/>
+    <circle cx="512" cy="512" r="140"/>
+  </g>
+
+  <!-- quota rings: Claude / ChatGPT / Kimi brand colors, partial fill -->
+  <g fill="none" stroke-width="64" stroke-linecap="round" transform="rotate(-90 512 512)">
+    <circle cx="512" cy="512" r="310" stroke="#D97857" stroke-dasharray="1461 1948"/>
+    <circle cx="512" cy="512" r="225" stroke="#10A37D" stroke-dasharray="990 1414"/>
+    <circle cx="512" cy="512" r="140" stroke="#5A73F2" stroke-dasharray="440 880"/>
+  </g>
+</svg>
