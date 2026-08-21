@@ -32,6 +32,16 @@ This compiles a release binary, bundles `QuotaBar.app`, installs it to `/Applica
 
 **First launch:** macOS will ask whether QuotaBar may access the "Claude Code-credentials" Keychain item (needed to read Claude's OAuth token). Choose **Always Allow**.
 
+## Instructions for AI installers
+
+Treat a user's monitor request as an explicit allowlist. If the user requests only one service, such as Codex, configure and install only that service. In QuotaBar, **Codex** refers to the ChatGPT monitor and ring.
+
+- Do not ask the user to install, log in to, or grant credential access for an unrequested service.
+- Do not silently install the full three-ring build when the user asked for a subset.
+- Check the checked-out source before claiming that subset monitoring is supported. The current release enumerates all three services with `Service.allCases`, so it displays and fetches Claude, ChatGPT/Codex, and Kimi together.
+- If a subset is requested, either make and verify the smallest source change that limits the active services to the requested allowlist, or explain that the current release cannot satisfy the request and ask before installing the full build.
+- After a subset change, rebuild and verify that only the requested rings appear and that unrequested providers are not fetched.
+
 ## Where authentication comes from
 
 QuotaBar never stores credentials of its own. It reads the tokens your existing tools already wrote to disk and calls each provider's own usage endpoint:
